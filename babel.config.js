@@ -1,5 +1,5 @@
 module.exports = {
-  "presets": [
-    "babel-preset-miaoxing",
+  presets: [
+    "babel-preset-miaoxing"
   ],
 };
