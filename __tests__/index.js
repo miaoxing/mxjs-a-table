@@ -6,6 +6,21 @@ import Table from '../Table';
 import $ from 'miaoxing';
 import {render, screen, waitForElementToBeRemoved} from '@testing-library/react'
 
+// https://jestjs.io/docs/en/manual-mocks#mocking-methods-which-are-not-implemented-in-jsdom
+Object.defineProperty(window, 'matchMedia', {
+  writable: true,
+  value: jest.fn().mockImplementation(query => ({
+    matches: false,
+    media: query,
+    onchange: null,
+    addListener: jest.fn(), // deprecated
+    removeListener: jest.fn(), // deprecated
+    addEventListener: jest.fn(),
+    removeEventListener: jest.fn(),
+    dispatchEvent: jest.fn(),
+  })),
+});
+
 function createPromise() {
   let res, rej;
 
@@ -77,7 +92,7 @@ describe('table', () => {
     />);
 
     await promise;
-    expect($.get).toHaveBeenCalledWith('test?page=1&rows=10');
+    expect($.get).toHaveBeenCalledWith('test?page=1&rows=20');
 
     await waitForElementToBeRemoved(container.querySelector('.ant-empty'));
     const cell = await screen.queryByText('内容');
