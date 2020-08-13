@@ -1,8 +1,14 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 const TableContext = React.createContext({});
 
 export default class TableProvider extends React.Component {
+  static propTypes = {
+    render: PropTypes.func,
+    children: PropTypes.node,
+  };
+
   constructor(props) {
     super(props);
 

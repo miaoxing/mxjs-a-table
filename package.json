@@ -41,6 +41,7 @@
     "@ant-design/pro-table": "^2.5.7",
     "@mxjs/cur-url": "^0.1.1",
     "append-url": "^1.0.1",
-    "miaoxing": "^0.1.0"
+    "miaoxing": "^0.1.0",
+    "prop-types": "^15.7.2"
   }
 }

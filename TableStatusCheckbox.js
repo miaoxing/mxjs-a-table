@@ -1,5 +1,6 @@
 import React from 'react';
-import {withTable} from "@mxjs/a-table";
+import PropTypes from 'prop-types';
+import {withTable} from './TableProvider';
 import $ from 'miaoxing';
 import curUrl from "@mxjs/cur-url";
 import {Checkbox} from 'antd';
@@ -7,8 +8,18 @@ import {Checkbox} from 'antd';
 // 记录checkbox状态，以免被外部重置
 const store = {};
 
-@withTable
-export default class TableStatusCheckbox extends React.Component {
+export default @withTable class TableStatusCheckbox extends React.Component {
+  static propTypes = {
+    url: PropTypes.string,
+    name: PropTypes.string.isRequired,
+    row: PropTypes.shape({
+      id: PropTypes.number.isRequired,
+    }),
+    table: PropTypes.shape({
+      reload: PropTypes.func.isRequired
+    }).isRequired
+  }
+
   state = {
     checked: this.getValue()
   };

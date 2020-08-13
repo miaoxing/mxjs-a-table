@@ -74,13 +74,13 @@ export default withTable(({url, table, tableApi, tableRef, columns = [], ...rest
       search={false}
       rowKey="id"
       toolBarRender={false}
-      onChange={(pagination, filters, sorter, extra) => {
+      onChange={(pagination, filters, sorter) => {
         querySorter = sorter;
         ref.current.reload();
       }}
       loading={false}
       {...restProps}
     />
-  )}
-);
+  )
+});
 
