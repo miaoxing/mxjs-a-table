@@ -21,4 +21,4 @@ export const useTable = () => {
     return new TableStore();
   }, []);
   return [table];
-}
+};

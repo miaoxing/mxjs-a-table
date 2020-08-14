@@ -7,6 +7,6 @@ const CTableDeleteLink = ({id, ...props}) => <TableDeleteLink href={curUrl.apiDe
 
 CTableDeleteLink.propTypes = {
   id: PropTypes.number.isRequired,
-}
+};
 
 export default CTableDeleteLink;

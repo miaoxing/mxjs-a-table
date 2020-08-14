@@ -4,7 +4,7 @@ import 'regenerator-runtime/runtime';
 import React from 'react';
 import Table from '../Table';
 import $ from 'miaoxing';
-import {render, screen, waitForElementToBeRemoved} from '@testing-library/react'
+import {render, screen, waitForElementToBeRemoved} from '@testing-library/react';
 
 // https://jestjs.io/docs/en/manual-mocks#mocking-methods-which-are-not-implemented-in-jsdom
 Object.defineProperty(window, 'matchMedia', {
@@ -33,7 +33,7 @@ function createPromise() {
       reject(result);
       return promise;
     };
-  })
+  });
 
   promise.resolve = res;
   promise.reject = rej;

@@ -38,7 +38,7 @@ export default class TableProvider extends React.Component {
   }
 
   render() {
-    return <TableContext.Provider value={this.state}>{this.getContent()}</TableContext.Provider>
+    return <TableContext.Provider value={this.state}>{this.getContent()}</TableContext.Provider>;
   }
 }
 

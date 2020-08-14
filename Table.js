@@ -26,7 +26,7 @@ const defaultRenderer = (value) => {
   } else {
     return value;
   }
-}
+};
 
 export default withTable(({url, table, tableApi, tableRef, columns = [], ...restProps}) => {
   const ref = useRef();
@@ -63,7 +63,7 @@ export default withTable(({url, table, tableApi, tableRef, columns = [], ...rest
         return new Promise(resolve => {
           const fullUrl = appendUrl(url, {page, rows, ...getSortPrams(), ...params, ...table.search});
           $.get(fullUrl).then(ret => {
-            resolve(ret)
+            resolve(ret);
           });
         });
       }}
@@ -81,6 +81,6 @@ export default withTable(({url, table, tableApi, tableRef, columns = [], ...rest
       loading={false}
       {...restProps}
     />
-  )
+  );
 });
 

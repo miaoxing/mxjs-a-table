@@ -51,7 +51,7 @@ export default @withTable class TableStatusCheckbox extends React.Component {
   getValue() {
     // 如果有更改过，显示更改过的状态
     if (typeof store[this.props.row.id] !== 'undefined') {
-      return store[this.props.row.id]
+      return store[this.props.row.id];
     }
 
     let value = this.props.row[this.props.name];
@@ -60,6 +60,6 @@ export default @withTable class TableStatusCheckbox extends React.Component {
   }
 
   render() {
-    return <Checkbox checked={this.state.checked} onChange={this.handleChange}/>
+    return <Checkbox checked={this.state.checked} onChange={this.handleChange}/>;
   }
 }
