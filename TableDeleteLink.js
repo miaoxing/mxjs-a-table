@@ -6,8 +6,8 @@ import {DeleteLink} from '@mxjs/a-button';
 class TableDeleteLink extends React.Component {
   static propTypes = {
     table: PropTypes.shape({
-      reload: PropTypes.func.isRequired
-    }).isRequired
+      reload: PropTypes.func.isRequired,
+    }).isRequired,
   }
 
   render() {

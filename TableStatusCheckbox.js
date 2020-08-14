@@ -16,12 +16,12 @@ export default @withTable class TableStatusCheckbox extends React.Component {
       id: PropTypes.number.isRequired,
     }),
     table: PropTypes.shape({
-      reload: PropTypes.func.isRequired
-    }).isRequired
+      reload: PropTypes.func.isRequired,
+    }).isRequired,
   }
 
   state = {
-    checked: this.getValue()
+    checked: this.getValue(),
   };
 
   handleChange = () => {
@@ -36,7 +36,7 @@ export default @withTable class TableStatusCheckbox extends React.Component {
       data: {
         id: this.props.row.id,
         [this.props.name]: +checked,
-      }
+      },
     }).then(ret => {
       $.ret(ret);
 

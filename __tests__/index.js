@@ -49,8 +49,8 @@ describe('table', () => {
           data: [
             {
               id: 1,
-              name: '内容'
-            }
+              name: '内容',
+            },
           ],
           page: 1,
           success: true,
@@ -60,8 +60,8 @@ describe('table', () => {
       columns={[
         {
           title: '名称',
-          dataIndex: 'name'
-        }
+          dataIndex: 'name',
+        },
       ]}
     />);
 
@@ -76,9 +76,9 @@ describe('table', () => {
       data: [
         {
           id: 1,
-          name: '内容'
-        }
-      ]
+          name: '内容',
+        },
+      ],
     }));
 
     const {container} = render(<Table
@@ -86,8 +86,8 @@ describe('table', () => {
       columns={[
         {
           title: '名称',
-          dataIndex: 'name'
-        }
+          dataIndex: 'name',
+        },
       ]}
     />);
 
