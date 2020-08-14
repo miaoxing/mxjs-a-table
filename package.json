@@ -28,7 +28,6 @@
     "url": "https://github.com/twinh/miaoxing/issues"
   },
   "devDependencies": {
-    "@emotion/core": "^10.0.34",
     "@testing-library/react": "^10.0.4",
     "core-js": "^3.6.5",
     "@miaoxing/dev": "^6.0.0",
