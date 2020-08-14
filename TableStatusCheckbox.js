@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {withTable} from './TableProvider';
 import $ from 'miaoxing';
-import curUrl from "@mxjs/cur-url";
+import curUrl from '@mxjs/cur-url';
 import {Checkbox} from 'antd';
 
 // 记录checkbox状态，以免被外部重置
