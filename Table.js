@@ -30,7 +30,7 @@ const defaultRenderer = (value) => {
 
 export default withTable(({url, table, tableApi, tableRef, columns = [], ...restProps}) => {
   const ref = useRef();
-  url || (url = curUrl.api());
+  url || (url = curUrl.apiData());
 
   columns.map((column) => {
     if (typeof column.dataIndex === 'undefined') {

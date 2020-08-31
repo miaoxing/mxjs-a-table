@@ -10,6 +10,7 @@ const store = {};
 
 export default @withTable class TableStatusCheckbox extends React.Component {
   static propTypes = {
+    mode: PropTypes.oneOf(['patch', 'toggle']),
     url: PropTypes.string,
     name: PropTypes.string.isRequired,
     row: PropTypes.shape({
@@ -18,6 +19,10 @@ export default @withTable class TableStatusCheckbox extends React.Component {
     table: PropTypes.shape({
       reload: PropTypes.func.isRequired,
     }).isRequired,
+  }
+
+  static defaultProps = {
+    mode: 'patch',
   }
 
   state = {
@@ -31,12 +36,10 @@ export default @withTable class TableStatusCheckbox extends React.Component {
     store[this.props.row.id] = checked;
 
     this.setState({checked: checked});
-    $.post({
-      url: this.props.url || curUrl.apiUpdate(),
-      data: {
-        id: this.props.row.id,
-        [this.props.name]: +checked,
-      },
+    $.http({
+      url: this.getUrl(),
+      method: this.getMethod(),
+      data: this.getData(),
     }).then(ret => {
       $.ret(ret);
 
@@ -47,6 +50,30 @@ export default @withTable class TableStatusCheckbox extends React.Component {
       delete store[this.props.row.id];
     });
   };
+
+  /**
+   * @todo 支持自动生成 delete 地址
+   */
+  getUrl() {
+    return this.props.url || curUrl.apiItem(this.props.row.id);
+  }
+
+  getMethod() {
+    if (this.props.mode === 'patch') {
+      return 'PATCH';
+    }
+    return this.state.checked ? 'DELETE' : 'PUT';
+  };
+
+  getData() {
+    if (this.props.mode === 'patch') {
+      return {
+        id: this.props.row.id,
+        [this.props.name]: !this.state.checked,
+      };
+    }
+    return {};
+  }
 
   getValue() {
     // 如果有更改过，显示更改过的状态
