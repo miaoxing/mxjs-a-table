@@ -1,3 +1,24 @@
+# [0.2.0](https://github.com/miaoxing/mxjs-a-table/compare/v0.1.3...v0.2.0) (2020-09-01)
+
+
+### Code Refactoring
+
+* 更改接口为 REST 风格 ([b195b3d](https://github.com/miaoxing/mxjs-a-table/commit/b195b3d93f8d664b77dff4ae4aaa51f4c0f84aab))
+
+
+### BREAKING CHANGES
+
+* 更改接口为 REST 风格
+
+
+
+
+
+### Dependencies
+
+* **@mxjs/cur-url:** upgrade from 0.1.4 to 0.2.0
+* **miaoxing:** upgrade from 0.1.3 to 0.1.4
+
 ## [0.1.3](https://github.com/miaoxing/mxjs-a-table/compare/v0.1.2...v0.1.3) (2020-08-17)
 
 
