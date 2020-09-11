@@ -6,7 +6,7 @@ import curUrl from '@mxjs/cur-url';
 const CTableDeleteLink = ({id, ...props}) => <TableDeleteLink href={curUrl.apiShow(id)} {...props} />;
 
 CTableDeleteLink.propTypes = {
-  id: PropTypes.number.isRequired,
+  id: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
 };
 
 export default CTableDeleteLink;
