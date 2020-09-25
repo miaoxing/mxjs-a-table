@@ -1,3 +1,21 @@
+## [0.2.1](https://github.com/miaoxing/mxjs-a-table/compare/v0.2.0...v0.2.1) (2020-09-25)
+
+
+### Bug Fixes
+
+* `id` 属性允许字符串和数字 ([c8e4c38](https://github.com/miaoxing/mxjs-a-table/commit/c8e4c38aa6163cff0bffae26b0676d1e51b1708a))
+
+
+
+
+
+### Dependencies
+
+* **@mxjs/cur-url:** upgrade from 0.2.0 to 0.2.1
+* **append-url:** upgrade from 1.0.3 to 1.0.4
+* **miaoxing:** upgrade from 0.1.4 to 0.1.5
+* **@miaoxing/dev:** upgrade from 6.1.1 to 6.1.2
+
 # [0.2.0](https://github.com/miaoxing/mxjs-a-table/compare/v0.1.3...v0.2.0) (2020-09-01)
 
 
