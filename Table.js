@@ -59,9 +59,9 @@ export default withTable(({url, table, tableApi, tableRef, columns = [], ...rest
     <ProTable
       columns={columns}
       actionRef={ref}
-      request={({current: page, pageSize: rows, ...params}) => {
+      request={({current: page, pageSize: limit, ...params}) => {
         return new Promise(resolve => {
-          const fullUrl = appendUrl(url, {page, rows, ...getSortPrams(), ...params, ...table.search});
+          const fullUrl = appendUrl(url, {page, limit, ...getSortPrams(), ...params, ...table.search});
           $.get(fullUrl).then(ret => {
             resolve(ret);
           });

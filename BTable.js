@@ -235,8 +235,8 @@ class BTable extends React.Component {
       this.setState({
         data: ret.data,
         page: parseInt(params.page, 10),
-        totalSize: ret.records,
-        sizePerPage: parseInt(ret.rows, 10)
+        totalSize: ret.total,
+        sizePerPage: parseInt(ret.limit, 10)
       });
       this.props.onLoad && this.props.onLoad(this.state);
       this.disableLoading();
