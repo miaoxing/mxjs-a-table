@@ -4,15 +4,20 @@ import {withTable} from './TableProvider';
 import $ from 'miaoxing';
 import curUrl from '@mxjs/cur-url';
 import {Checkbox} from 'antd';
+import {setValue, getValue} from 'rc-field-form/lib/utils/valueUtil';
 
 // 记录checkbox状态，以免被外部重置
 const store = {};
 
-export default @withTable class TableStatusCheckbox extends React.Component {
+export default @withTable
+class TableStatusCheckbox extends React.Component {
   static propTypes = {
     mode: PropTypes.oneOf(['patch', 'toggle']),
     url: PropTypes.string,
-    name: PropTypes.string.isRequired,
+    name: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.array,
+    ]).isRequired,
     row: PropTypes.shape({
       id: PropTypes.number.isRequired,
     }),
@@ -67,10 +72,10 @@ export default @withTable class TableStatusCheckbox extends React.Component {
 
   getData() {
     if (this.props.mode === 'patch') {
-      return {
-        id: this.props.row.id,
-        [this.props.name]: !this.state.checked,
-      };
+      return Object.assign(
+        {id: this.props.row.id},
+        setValue({}, this.getName(), !this.state.checked)
+      );
     }
     return {};
   }
@@ -81,9 +86,13 @@ export default @withTable class TableStatusCheckbox extends React.Component {
       return store[this.props.row.id];
     }
 
-    let value = this.props.row[this.props.name];
+    let value = getValue(this.props.row, this.getName());
     // 兼容数据库返回
     return value === '0' ? false : !!value;
+  }
+
+  getName() {
+    return Array.isArray(this.props.name) ? this.props.name : [this.props.name];
   }
 
   render() {
