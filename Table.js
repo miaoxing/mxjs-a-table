@@ -5,9 +5,7 @@ import $ from 'miaoxing';
 import curUrl from '@mxjs/cur-url';
 import {withTable} from './TableProvider';
 
-let querySorter = {};
-
-const getSortPrams = () => {
+const getSortPrams = (querySorter) => {
   // 取消排序后，field 是点击的字段，order 是 undefined
   // 因此判断 order 无值则无需排序
   if (!querySorter.order) {
@@ -29,6 +27,8 @@ const defaultRenderer = (value) => {
 };
 
 export default withTable(({url, table, tableApi, tableRef, columns = [], ...restProps}) => {
+  let querySorter = {};
+
   const ref = useRef();
   url || (url = curUrl.apiData());
 
@@ -61,7 +61,7 @@ export default withTable(({url, table, tableApi, tableRef, columns = [], ...rest
       actionRef={ref}
       request={({current: page, pageSize: limit, ...params}) => {
         return new Promise(resolve => {
-          const fullUrl = appendUrl(url, {page, limit, ...getSortPrams(), ...params, ...table.search});
+          const fullUrl = appendUrl(url, {page, limit, ...getSortPrams(querySorter), ...params, ...table.search});
           $.get(fullUrl).then(ret => {
             resolve(ret);
           });
