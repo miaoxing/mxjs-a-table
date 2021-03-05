@@ -1,3 +1,32 @@
+# [0.3.0](https://github.com/miaoxing/mxjs-a-table/compare/v0.2.1...v0.3.0) (2021-03-05)
+
+
+### Bug Fixes
+
+* 排序被缓存起来，影响到其他表格 ([231c39b](https://github.com/miaoxing/mxjs-a-table/commit/231c39b15fab69722e09d676e2e8c8508cc03262))
+
+
+### Features
+
+* 支持 `name`传入数组，处理多级数据 ([61873f5](https://github.com/miaoxing/mxjs-a-table/commit/61873f5b6de4d44f17731ef92acd8d91c5ad9e2a))
+
+
+* refactor!: 列表数据中 `rows` 改为 `limit`，`records` 改为 `total` ([bb8dcaa](https://github.com/miaoxing/mxjs-a-table/commit/bb8dcaa6762ebba78fdff3e9c75b5b42fcec8dd2))
+
+
+### BREAKING CHANGES
+
+* 列表数据中 `rows` 改为 `limit`，`records` 改为 `total`
+
+
+
+
+
+### Dependencies
+
+* **@mxjs/cur-url:** upgrade from 0.2.1 to 0.2.2
+* **miaoxing:** upgrade from 0.1.5 to 0.1.6
+
 ## [0.2.1](https://github.com/miaoxing/mxjs-a-table/compare/v0.2.0...v0.2.1) (2020-09-25)
 
 
