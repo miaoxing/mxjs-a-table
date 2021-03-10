@@ -1,3 +1,21 @@
+## [0.3.4](https://github.com/miaoxing/mxjs-a-table/compare/v0.3.3...v0.3.4) (2021-03-10)
+
+
+### Bug Fixes
+
+* 指定要发布的文件 ([7394fb8](https://github.com/miaoxing/mxjs-a-table/commit/7394fb8cb1712e7b32c8768d803c90197197cc33))
+
+
+
+
+
+### Dependencies
+
+* **@mxjs/cur-url:** upgrade from 0.2.5 to 0.2.6
+* **append-url:** upgrade from 1.0.7 to 1.0.8
+* **miaoxing:** upgrade from 0.1.9 to 0.1.10
+* **@miaoxing/dev:** upgrade from 6.3.1 to 6.3.2
+
 ## [0.3.3](https://github.com/miaoxing/mxjs-a-table/compare/v0.3.2...v0.3.3) (2021-03-09)
 
 
