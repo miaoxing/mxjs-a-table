@@ -1,6 +1,6 @@
 {
   "name": "@mxjs/a-table",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "description": "> TODO: description",
   "author": "twinh <twinhuang@qq.com>",
   "homepage": "https://github.com/twinh/miaoxing#readme",
@@ -44,7 +44,7 @@
     "@ant-design/pro-table": "^2.5.7",
     "@mxjs/cur-url": "^0.2.7",
     "append-url": "^1.0.8",
-    "miaoxing": "^0.1.10",
+    "miaoxing": "^0.2.0",
     "prop-types": "^15.7.2"
   },
   "jest": {
