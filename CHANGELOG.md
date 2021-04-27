@@ -1,3 +1,16 @@
+## [0.3.9](https://github.com/miaoxing/mxjs-a-table/compare/v0.3.8...v0.3.9) (2021-04-27)
+
+
+
+
+
+### Dependencies
+
+* **@mxjs/cur-url:** upgrade from `0.2.9` to `0.2.10`
+* **append-url:** upgrade from `1.0.10` to `1.0.11`
+* **miaoxing:** upgrade from `0.2.2` to `0.2.3`
+* **@miaoxing/dev:** upgrade from `6.3.4` to `6.4.0`
+
 ## [0.3.8](https://github.com/miaoxing/mxjs-a-table/compare/v0.3.7...v0.3.8) (2021-03-22)
 
 
