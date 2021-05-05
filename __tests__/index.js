@@ -1,6 +1,3 @@
-import 'core-js/stable';
-import 'regenerator-runtime/runtime';
-
 import React from 'react';
 import Table from '../Table';
 import $ from 'miaoxing';
@@ -77,7 +74,7 @@ describe('table', () => {
     />);
 
     await promise;
-    expect($.get).toHaveBeenCalledWith('test?page=1&rows=20');
+    expect($.get).toHaveBeenCalledWith('test?page=1&limit=20');
 
     await waitForElementToBeRemoved(container.querySelector('.ant-empty'));
     const cell = await screen.queryByText('内容');
