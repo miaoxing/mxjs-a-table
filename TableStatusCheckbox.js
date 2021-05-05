@@ -68,7 +68,7 @@ class TableStatusCheckbox extends React.Component {
       return 'PATCH';
     }
     return this.state.checked ? 'DELETE' : 'PUT';
-  };
+  }
 
   getData() {
     if (this.props.mode === 'patch') {
