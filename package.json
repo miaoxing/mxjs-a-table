@@ -1,6 +1,6 @@
 {
   "name": "@mxjs/a-table",
-  "version": "0.3.9",
+  "version": "0.3.10",
   "description": "> TODO: description",
   "author": "twinh <twinhuang@qq.com>",
   "homepage": "https://github.com/twinh/miaoxing#readme",
@@ -39,16 +39,16 @@
   "dependencies": {
     "antd": "^4.15.2",
     "@ant-design/pro-table": "^2.5.7",
-    "@mxjs/cur-url": "^0.2.10",
-    "append-url": "^1.0.11",
-    "miaoxing": "^0.2.3",
+    "@mxjs/cur-url": "^0.2.11",
+    "append-url": "^1.0.12",
+    "miaoxing": "^0.2.4",
     "prop-types": "^15.7.2",
-    "@mxjs/a-button": "^0.2.10"
+    "@mxjs/a-button": "^0.2.11"
   },
   "devDependencies": {
     "@testing-library/react": "^11.2.6",
     "core-js": "^3.6.5",
-    "@miaoxing/dev": "^6.4.0",
+    "@miaoxing/dev": "^7.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
