@@ -45,7 +45,7 @@ class TableStatusCheckbox extends React.Component {
       url: this.getUrl(),
       method: this.getMethod(),
       data: this.getData(),
-    }).then(ret => {
+    }).then(({ret}) => {
       $.ret(ret);
 
       // 重载数据，加载新的状态

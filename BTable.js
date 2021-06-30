@@ -231,7 +231,7 @@ class BTable extends React.Component {
     params = Object.assign({}, tableParams, searchParams, params);
 
     this.enableLoading();
-    $.get(this.getUrl(), {params: params}).then(ret => {
+    $.get(this.getUrl(), {params: params}).then(({ret}) => {
       this.setState({
         data: ret.data,
         page: parseInt(params.page, 10),

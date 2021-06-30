@@ -62,7 +62,7 @@ export default withTable(({url, table, tableApi, tableRef, columns = [], ...rest
       request={({current: page, pageSize: limit, ...params}) => {
         return new Promise(resolve => {
           const fullUrl = appendUrl(url, {page, limit, ...getSortPrams(querySorter), ...params, ...table.search});
-          $.get(fullUrl).then(ret => {
+          $.get(fullUrl).then(({ret}) => {
             resolve(ret);
           });
         });
