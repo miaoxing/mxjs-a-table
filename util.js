@@ -1,4 +1,4 @@
-import React from 'react';
+import { useMemo } from 'react';
 
 class TableStore {
   hooked = false;
@@ -17,7 +17,7 @@ class TableStore {
 }
 
 export const useTable = () => {
-  const table = React.useMemo(() => {
+  const table = useMemo(() => {
     return new TableStore();
   }, []);
   return [table];
