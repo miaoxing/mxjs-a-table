@@ -1,26 +1,7 @@
 import Table from '../Table';
 import $ from 'miaoxing';
 import {render, screen, waitForElementToBeRemoved} from '@testing-library/react';
-
-function createPromise() {
-  let res, rej;
-
-  const promise = new Promise((resolve, reject) => {
-    res = (result) => {
-      resolve(result);
-      return promise;
-    };
-    rej = (result) => {
-      reject(result);
-      return promise;
-    };
-  });
-
-  promise.resolve = res;
-  promise.reject = rej;
-
-  return promise;
-}
+import {createPromise} from '@mxjs/test';
 
 describe('table', () => {
   test('column', async () => {
