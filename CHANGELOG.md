@@ -1,3 +1,28 @@
+# [0.4.0](https://github.com/miaoxing/mxjs-a-table/compare/v0.3.11...v0.4.0) (2021-10-28)
+
+
+### Features
+
+* `react` 依赖移到 `peerDependencies` 中，开发依赖使用 `react` 17 ([94ee842](https://github.com/miaoxing/mxjs-a-table/commit/94ee842f5ffac525125c96ed7d630f7fc3a9366e))
+
+
+### BREAKING CHANGES
+
+* `react` 依赖移到 `peerDependencies` 中，开发依赖使用 `react` 17
+
+
+
+
+
+### Dependencies
+
+* **@mxjs/cur-url:** upgrade from `0.2.12` to `0.2.13`
+* **append-url:** upgrade from `1.0.13` to `1.0.14`
+* **miaoxing:** upgrade from `0.2.5` to `0.3.0`
+* **@mxjs/a-button:** upgrade from `0.2.12` to `0.3.0`
+* **@miaoxing/dev:** upgrade from `7.0.1` to `8.0.0`
+* **@mxjs/test:** upgrade from `0.1.8` to `0.2.0`
+
 ## [0.3.11](https://github.com/miaoxing/mxjs-a-table/compare/v0.3.10...v0.3.11) (2021-05-12)
 
 
