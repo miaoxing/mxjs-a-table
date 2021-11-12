@@ -19,7 +19,7 @@ class TableStatusCheckbox extends React.Component {
       PropTypes.array,
     ]).isRequired,
     row: PropTypes.shape({
-      id: PropTypes.number.isRequired,
+      id: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
     }),
     table: PropTypes.shape({
       reload: PropTypes.func.isRequired,
