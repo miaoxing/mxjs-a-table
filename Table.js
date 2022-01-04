@@ -58,6 +58,7 @@ export default withTable(({url, table, tableApi, tableRef, columns = [], ...rest
   return (
     <ProTable
       columns={columns}
+      columnEmptyText={false}
       actionRef={ref}
       request={({current: page, pageSize: limit, ...params}) => {
         return new Promise(resolve => {
@@ -83,4 +84,3 @@ export default withTable(({url, table, tableApi, tableRef, columns = [], ...rest
     />
   );
 });
-
