@@ -1,3 +1,30 @@
+## [0.4.1](https://github.com/miaoxing/mxjs-a-table/compare/v0.4.0...v0.4.1) (2022-01-12)
+
+
+### Bug Fixes
+
+* **a-table:** 不使用默认空值，自行生成空值 ([a4d8db4](https://github.com/miaoxing/mxjs-a-table/commit/a4d8db47ac2a791d7d02e334a74edcd248668682))
+
+
+### Features
+
+* 更新 `antd` 到 `~4.17.4` ([ee80872](https://github.com/miaoxing/mxjs-a-table/commit/ee80872eb6ecbb99d66714bc958c7c1f692f378e))
+* **a-table:** 更新 `@ant-design/pro-table` 到 `^2.57.2` ([6feb958](https://github.com/miaoxing/mxjs-a-table/commit/6feb958a35b51c78b3860267493116903f35b8f6))
+* **a-table, TableStatusCheckbox:** 增加允许 `row.id` 为字符串 ([3f8be2b](https://github.com/miaoxing/mxjs-a-table/commit/3f8be2b987547e5d4832df5fe34fc0e5d34f1564))
+
+
+
+
+
+### Dependencies
+
+* **@mxjs/cur-url:** upgrade from `0.2.13` to `0.2.14`
+* **append-url:** upgrade from `1.0.14` to `1.0.15`
+* **miaoxing:** upgrade from `0.3.0` to `0.4.0`
+* **@mxjs/a-button:** upgrade from `0.3.0` to `0.4.0`
+* **@miaoxing/dev:** upgrade from `8.0.0` to `8.0.1`
+* **@mxjs/test:** upgrade from `0.2.0` to `0.2.1`
+
 # [0.4.0](https://github.com/miaoxing/mxjs-a-table/compare/v0.3.11...v0.4.0) (2021-10-28)
 
 
