@@ -1,3 +1,14 @@
+## [0.4.6](https://github.com/miaoxing/mxjs-a-table/compare/v0.4.5...v0.4.6) (2022-06-06)
+
+
+
+
+
+### Dependencies
+
+* **@mxjs/cur-url:** upgrade from `0.2.18` to `0.2.19`
+* **@mxjs/test:** upgrade from `0.2.5` to `0.2.6`
+
 ## [0.4.5](https://github.com/miaoxing/mxjs-a-table/compare/v0.4.4...v0.4.5) (2022-06-01)
 
 
