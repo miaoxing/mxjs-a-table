@@ -3,7 +3,7 @@
   "version": "0.4.6",
   "description": "> TODO: description",
   "author": "twinh <twinhuang@qq.com>",
-  "homepage": "https://github.com/twinh/miaoxing#readme",
+  "homepage": "https://github.com/miaoxing/miaoxing#readme",
   "license": "MIT",
   "main": "index.js",
   "directories": {
@@ -25,13 +25,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/twinh/miaoxing.git"
+    "url": "git+https://github.com/miaoxing/miaoxing.git"
   },
   "scripts": {
     "test": "jest"
   },
   "bugs": {
-    "url": "https://github.com/twinh/miaoxing/issues"
+    "url": "https://github.com/miaoxing/miaoxing/issues"
   },
   "jest": {
     "preset": "jest-preset-miaoxing"
