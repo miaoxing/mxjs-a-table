@@ -1,3 +1,23 @@
+# [1.0.0](https://github.com/miaoxing/mxjs-a-table/compare/v0.4.6...v1.0.0) (2022-07-01)
+
+
+### Features
+
+* 发布 1.0.0 [release 1.0.0] ([095f846](https://github.com/miaoxing/mxjs-a-table/commit/095f8467e755a9b5c2b387d966b4cba1b8c2eab0))
+
+
+
+
+
+### Dependencies
+
+* **@mxjs/cur-url:** upgrade from `0.2.19` to `1.0.0`
+* **append-url:** upgrade from `1.0.17` to `1.0.18`
+* **miaoxing:** upgrade from `0.4.2` to `0.4.3`
+* **@mxjs/a-button:** upgrade from `0.4.2` to `1.0.0`
+* **@miaoxing/dev:** upgrade from `8.1.1` to `8.1.2`
+* **@mxjs/test:** upgrade from `0.2.6` to `1.0.0`
+
 ## [0.4.6](https://github.com/miaoxing/mxjs-a-table/compare/v0.4.5...v0.4.6) (2022-06-06)
 
 
