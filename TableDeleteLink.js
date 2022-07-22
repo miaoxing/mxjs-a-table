@@ -1,19 +1,15 @@
-import { Component } from 'react';
 import PropTypes from 'prop-types';
 import {withTable} from './TableProvider';
 import {DeleteLink} from '@mxjs/a-button';
 
-class TableDeleteLink extends Component {
-  static propTypes = {
-    table: PropTypes.shape({
-      reload: PropTypes.func.isRequired,
-    }).isRequired,
-  }
+const TableDeleteLink = ({table, ...props}) => {
+  return <DeleteLink {...props} onDelete={table.reload}/>;
+};
 
-  render() {
-    const {table, ...props} = this.props;
-    return <DeleteLink {...props} onDelete={table.reload}/>;
-  }
-}
+TableDeleteLink.propTypes = {
+  table: PropTypes.shape({
+    reload: PropTypes.func.isRequired,
+  }).isRequired,
+};
 
 export default withTable(TableDeleteLink);
