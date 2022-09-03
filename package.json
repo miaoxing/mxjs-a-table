@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "antd": "~4.17.4",
-    "@ant-design/pro-table": "^2.57.2",
+    "@ant-design/pro-table": "~2.57.2",
     "@mxjs/cur-url": "^1.0.1",
     "append-url": "^1.0.19",
     "miaoxing": "^0.4.4",
