@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/miaoxing/mxjs-a-table/compare/v1.0.1...v1.0.2) (2022-09-03)
+
+
+### Bug Fixes
+
+* **a-table:** 解决依赖 `a-table` 的包，安装后 `antd` 版本变高 ([dead8d5](https://github.com/miaoxing/mxjs-a-table/commit/dead8d50f7594a4c14675cfaf74ffa2f6628918c))
+
 ## [1.0.1](https://github.com/miaoxing/mxjs-a-table/compare/v1.0.0...v1.0.1) (2022-08-02)
 
 
