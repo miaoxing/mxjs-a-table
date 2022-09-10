@@ -2,6 +2,7 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 
 const TableContext = React.createContext({});
+const useTable = () => React.useContext(TableContext);
 
 export default class TableProvider extends React.Component {
   static propTypes = {
@@ -52,4 +53,4 @@ function withTable(Component) {
   };
 }
 
-export {withTable};
+export {withTable, useTable};
