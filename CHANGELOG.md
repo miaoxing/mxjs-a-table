@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/miaoxing/mxjs-a-table/compare/v1.0.2...v1.1.0) (2022-09-30)
+
+
+### Features
+
+* **a-table:** 增加 `useTable` 方法 ([fb38c25](https://github.com/miaoxing/mxjs-a-table/commit/fb38c25f206526da069042b121b26f157c284328))
+
 ## [1.0.2](https://github.com/miaoxing/mxjs-a-table/compare/v1.0.1...v1.0.2) (2022-09-03)
 
 
