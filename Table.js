@@ -1,9 +1,12 @@
-import { useEffect, useRef } from 'react';
+import {useEffect, useRef} from 'react';
 import ProTable from '@ant-design/pro-table';
 import appendUrl from 'append-url';
 import $ from 'miaoxing';
 import curUrl from '@mxjs/cur-url';
+import {Typography} from 'antd';
 import {withTable} from './TableProvider';
+
+const {Text} = Typography;
 
 const getSortPrams = (querySorter) => {
   // 取消排序后，field 是点击的字段，order 是 undefined
@@ -18,13 +21,7 @@ const getSortPrams = (querySorter) => {
   return {sort, order};
 };
 
-const defaultRenderer = (value) => {
-  if (typeof value === 'undefined' || value === '' || value === null) {
-    return <span className="text-muted">-</span>;
-  } else {
-    return value;
-  }
-};
+const columnEmptyText = <Text type="secondary">-</Text>;
 
 export default withTable(({url, table, tableApi, tableRef, columns = [], ...restProps}) => {
   let querySorter = {};
@@ -35,9 +32,6 @@ export default withTable(({url, table, tableApi, tableRef, columns = [], ...rest
   columns.map((column) => {
     if (typeof column.dataIndex === 'undefined') {
       column.dataIndex = column.title;
-    }
-    if (typeof column.render === 'undefined') {
-      column.render = defaultRenderer;
     }
   });
 
@@ -58,7 +52,7 @@ export default withTable(({url, table, tableApi, tableRef, columns = [], ...rest
   return (
     <ProTable
       columns={columns}
-      columnEmptyText={false}
+      columnEmptyText={columnEmptyText}
       actionRef={ref}
       request={({current: page, pageSize: limit, ...params}) => {
         return new Promise(resolve => {
