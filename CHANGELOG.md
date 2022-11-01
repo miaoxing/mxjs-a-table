@@ -1,3 +1,18 @@
+## [1.1.1](https://github.com/miaoxing/mxjs-a-table/compare/v1.1.0...v1.1.1) (2022-11-01)
+
+
+### Bug Fixes
+
+* **a-table:** 单元格的值为空未展示 "-" ([fcb5b00](https://github.com/miaoxing/mxjs-a-table/commit/fcb5b00f0e27c73f86a6b5536a2f2932fd9605bd))
+
+
+
+
+
+### Dependencies
+
+* **@mxjs/a-button:** upgrade from `1.0.1` to `1.1.0`
+
 # [1.1.0](https://github.com/miaoxing/mxjs-a-table/compare/v1.0.2...v1.1.0) (2022-09-30)
 
 
