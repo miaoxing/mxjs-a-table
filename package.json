@@ -10,15 +10,6 @@
     "lib": "lib",
     "test": "__tests__"
   },
-  "files": [
-    "CTableDeleteLink.js",
-    "index.js",
-    "Table.js",
-    "TableDeleteLink.js",
-    "TableProvider.js",
-    "TableStatusCheckbox.js",
-    "util.js"
-  ],
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
