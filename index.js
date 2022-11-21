@@ -1,5 +1,5 @@
 export Table from './Table';
-export TableProvider, {withTable} from './TableProvider';
+export TableProvider, {withTable, TableContext} from './TableProvider';
 export TableStatusCheckbox from './TableStatusCheckbox';
 export TableDeleteLink from './TableDeleteLink';
 export CTableDeleteLink from './CTableDeleteLink';

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 
-const TableContext = React.createContext({});
+export const TableContext = React.createContext({});
 const useTable = () => React.useContext(TableContext);
 
 export default class TableProvider extends React.Component {
@@ -17,6 +17,7 @@ export default class TableProvider extends React.Component {
       search: {},
       handleSearch: this.handleSearch,
       reload: this.reload,
+      sort: {},
     };
   }
 

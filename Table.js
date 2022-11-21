@@ -1,10 +1,10 @@
-import {useEffect, useRef} from 'react';
+import {useContext, useEffect, useRef} from 'react';
 import ProTable from '@ant-design/pro-table';
 import appendUrl from 'append-url';
 import $ from 'miaoxing';
 import curUrl from '@mxjs/cur-url';
 import {Typography} from 'antd';
-import {withTable} from './TableProvider';
+import {withTable, TableContext} from './TableProvider';
 
 const {Text} = Typography;
 
@@ -24,6 +24,8 @@ const getSortPrams = (querySorter) => {
 const columnEmptyText = <Text type="secondary">-</Text>;
 
 export default withTable(({url, table, tableApi, tableRef, columns = [], ...restProps}) => {
+  const tableContext = useContext(TableContext);
+
   let querySorter = {};
 
   const ref = useRef();
@@ -54,7 +56,8 @@ export default withTable(({url, table, tableApi, tableRef, columns = [], ...rest
       columns={columns}
       columnEmptyText={columnEmptyText}
       actionRef={ref}
-      request={({current: page, pageSize: limit, ...params}) => {
+      request={({current: page, pageSize: limit, ...params}, sort) => {
+        tableContext.sort = sort;
         return new Promise(resolve => {
           const fullUrl = appendUrl(url, {page, limit, ...getSortPrams(querySorter), ...params, ...table.search});
           $.get(fullUrl).then(({ret}) => {
