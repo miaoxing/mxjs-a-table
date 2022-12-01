@@ -1,3 +1,21 @@
+# [1.2.0](https://github.com/miaoxing/mxjs-a-table/compare/v1.1.2...v1.2.0) (2022-12-01)
+
+
+### Features
+
+* **a-table:** 增加 `TableContext` 接口，`TableContext` 增加 `sort` 值 ([52c4dcb](https://github.com/miaoxing/mxjs-a-table/commit/52c4dcb55fe95eecddd013423f3cbc5112e423ea))
+
+
+
+
+
+### Dependencies
+
+* **@mxjs/cur-url:** upgrade from `1.0.1` to `1.0.2`
+* **miaoxing:** upgrade from `0.4.4` to `0.4.5`
+* **@mxjs/a-button:** upgrade from `1.1.1` to `1.1.2`
+* **@mxjs/test:** upgrade from `1.0.1` to `1.0.2`
+
 ## [1.1.2](https://github.com/miaoxing/mxjs-a-table/compare/v1.1.1...v1.1.2) (2022-11-02)
 
 
