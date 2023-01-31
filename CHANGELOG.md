@@ -1,3 +1,18 @@
+# [1.3.0](https://github.com/miaoxing/mxjs-a-table/compare/v1.2.1...v1.3.0) (2023-01-31)
+
+
+### Features
+
+* 更新 `antd` 到 `~4.24.7` ([8483309](https://github.com/miaoxing/mxjs-a-table/commit/84833090ae72f9c9f4262b4eef77244ca7d938c5))
+
+
+
+
+
+### Dependencies
+
+* **@mxjs/a-button:** upgrade from `1.1.3` to `1.2.0`
+
 ## [1.2.1](https://github.com/miaoxing/mxjs-a-table/compare/v1.2.0...v1.2.1) (2023-01-01)
 
 
