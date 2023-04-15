@@ -1,3 +1,20 @@
+# [1.4.0](https://github.com/miaoxing/mxjs-a-table/compare/v1.3.0...v1.4.0) (2023-04-15)
+
+
+### Features
+
+* **a-table:** 增加 `TableActions` 组件，用于展示操作链接，并在无链接时显示空数据 ([8f39ae7](https://github.com/miaoxing/mxjs-a-table/commit/8f39ae7f331eda8e82c82b6b2ffb491e758e6d76))
+* 带参数的链接生成 `permission` 简化权限判断 ([afb6683](https://github.com/miaoxing/mxjs-a-table/commit/afb6683d223dc0c65cbb7f67408d7120e525115e))
+* 链接按钮增加 `getPermissions` 方法，以便父组件过滤无权限的子组件 ([2395626](https://github.com/miaoxing/mxjs-a-table/commit/239562638efabac4a7646fa22ee46f8501036ad5))
+
+
+
+
+
+### Dependencies
+
+* **@mxjs/a-button:** upgrade from `1.2.0` to `1.3.0`
+
 # [1.3.0](https://github.com/miaoxing/mxjs-a-table/compare/v1.2.1...v1.3.0) (2023-01-31)
 
 
