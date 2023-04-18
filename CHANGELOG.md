@@ -1,3 +1,19 @@
+## [1.4.1](https://github.com/miaoxing/mxjs-a-table/compare/v1.4.0...v1.4.1) (2023-04-18)
+
+
+### Bug Fixes
+
+* **a-table:** 增加 `@mxjs/actions` 依赖 ([fed6ccc](https://github.com/miaoxing/mxjs-a-table/commit/fed6ccc438d028b4152084da17cd46f5aba79ad0))
+
+
+
+
+
+### Dependencies
+
+* **@mxjs/actions:** upgrade from `0.2.9` to `0.2.10`
+* **@mxjs/a-button:** upgrade from `1.3.0` to `1.3.1`
+
 # [1.4.0](https://github.com/miaoxing/mxjs-a-table/compare/v1.3.0...v1.4.0) (2023-04-15)
 
 
