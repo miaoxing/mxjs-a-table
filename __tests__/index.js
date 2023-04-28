@@ -35,14 +35,14 @@ describe('table', () => {
   test('url', async () => {
     const promise = createPromise();
     $.get = jest.fn().mockImplementationOnce(() => promise.resolve({
-      ret: {
+      ret: Ret.suc({
         data: [
           {
             id: 1,
             name: '内容',
           },
         ],
-      },
+      }),
     }));
 
     const {container} = render(<Table

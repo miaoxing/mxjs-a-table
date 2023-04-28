@@ -61,6 +61,11 @@ export default withTable(({url, table, tableApi, tableRef, columns = [], ...rest
         return new Promise(resolve => {
           const fullUrl = appendUrl(url, {page, limit, ...getSortPrams(querySorter), ...params, ...table.search});
           $.get(fullUrl).then(({ret}) => {
+            if (ret.isErr()) {
+              $.ret(ret);
+              return;
+            }
+
             resolve(ret);
           });
         });
