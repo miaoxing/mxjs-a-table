@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/miaoxing/mxjs-a-table/compare/v1.4.1...v1.4.2) (2023-04-30)
+
+
+### Bug Fixes
+
+* **a-table:** 加载接口数据出错时，弹出错误 ([47b6667](https://github.com/miaoxing/mxjs-a-table/commit/47b666787b6669e7210069dbfd1c68e316b100c1))
+
 ## [1.4.1](https://github.com/miaoxing/mxjs-a-table/compare/v1.4.0...v1.4.1) (2023-04-18)
 
 
