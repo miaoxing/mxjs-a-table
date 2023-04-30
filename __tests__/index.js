@@ -1,5 +1,5 @@
 import Table from '../Table';
-import $ from 'miaoxing';
+import $, {Ret} from 'miaoxing';
 import {render, screen, waitForElementToBeRemoved} from '@testing-library/react';
 import {createPromise} from '@mxjs/test';
 
