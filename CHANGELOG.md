@@ -1,3 +1,25 @@
+# [1.5.0](https://github.com/miaoxing/mxjs-a-table/compare/v1.4.2...v1.5.0) (2023-05-31)
+
+
+### Features
+
+* **antd5:** 更新 `@ant-design/pro-components` 支持 antd v5 ([a87bae4](https://github.com/miaoxing/mxjs-a-table/commit/a87bae4ccbe86a62f108e69c64023c80a507d72e))
+* **antd5:** 更新 `antd` 到 `5.1.6` ([eed56c2](https://github.com/miaoxing/mxjs-a-table/commit/eed56c20d67f7923a1f027e40df722dc9e475faf))
+
+
+
+
+
+### Dependencies
+
+* **@mxjs/cur-url:** upgrade from `1.0.3` to `1.0.4`
+* **append-url:** upgrade from `1.0.20` to `1.0.21`
+* **miaoxing:** upgrade from `0.4.6` to `0.4.7`
+* **@mxjs/actions:** upgrade from `0.2.10` to `0.2.11`
+* **@mxjs/a-button:** upgrade from `1.3.1` to `2.0.0`
+* **@miaoxing/dev:** upgrade from `8.2.0` to `8.2.1`
+* **@mxjs/test:** upgrade from `1.0.3` to `1.0.4`
+
 ## [1.4.2](https://github.com/miaoxing/mxjs-a-table/compare/v1.4.1...v1.4.2) (2023-04-30)
 
 
