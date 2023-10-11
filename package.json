@@ -32,6 +32,7 @@
     "@ant-design/pro-components": "~2.3.52",
     "@mxjs/cur-url": "^1.0.7",
     "append-url": "^1.0.23",
+    "deepmerge": "^4.2.2",
     "miaoxing": "^0.4.9",
     "prop-types": "^15.7.2",
     "@mxjs/actions": "^0.2.13",
