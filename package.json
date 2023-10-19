@@ -35,6 +35,7 @@
     "deepmerge": "^4.2.2",
     "miaoxing": "^0.4.9",
     "prop-types": "^15.7.2",
+    "set-value": "^4.1.0",
     "@mxjs/actions": "^0.2.13",
     "@mxjs/a-button": "^3.0.2"
   },
