@@ -1,3 +1,11 @@
+# [1.6.0](https://github.com/miaoxing/mxjs-a-table/compare/v1.5.3...v1.6.0) (2023-11-02)
+
+
+### Features
+
+* **a-table:** 增加 `TableTabs` 组件 ([64a2acb](https://github.com/miaoxing/mxjs-a-table/commit/64a2acb74f1656c06d7ad8187e0acbfdd0fc0fd5))
+* **a-table, experimental:** 增加 `addSearch` 方法 ([5dc05b8](https://github.com/miaoxing/mxjs-a-table/commit/5dc05b878cdd28290d7778279e8332b3d740fa04))
+
 ## [1.5.3](https://github.com/miaoxing/mxjs-a-table/compare/v1.5.2...v1.5.3) (2023-09-02)
 
 
