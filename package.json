@@ -1,6 +1,6 @@
 {
   "name": "@mxjs/a-table",
-  "version": "1.6.3",
+  "version": "1.7.0",
   "description": "> TODO: description",
   "author": "twinh <twinhuang@qq.com>",
   "homepage": "https://github.com/miaoxing/miaoxing#readme",
@@ -36,8 +36,8 @@
     "miaoxing": "^0.4.12",
     "prop-types": "^15.7.2",
     "set-value": "^4.1.0",
-    "@mxjs/actions": "^0.2.16",
-    "@mxjs/a-button": "^3.0.5"
+    "@mxjs/actions": "^0.2.17",
+    "@mxjs/a-button": "^3.1.0"
   },
   "devDependencies": {
     "@testing-library/react": "^11.2.6",

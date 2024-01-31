@@ -1,3 +1,19 @@
+# [1.7.0](https://github.com/miaoxing/mxjs-a-table/compare/v1.6.3...v1.7.0) (2024-01-31)
+
+
+### Features
+
+* 更新 `react` 支持 18 ([e2bdf84](https://github.com/miaoxing/mxjs-a-table/commit/e2bdf84d1b25766ce17c2b2bc61a0135a56fcf67))
+
+
+
+
+
+### Dependencies
+
+* **@mxjs/actions:** upgrade from `0.2.16` to `0.2.17`
+* **@mxjs/a-button:** upgrade from `3.0.5` to `3.1.0`
+
 ## [1.6.3](https://github.com/miaoxing/mxjs-a-table/compare/v1.6.2...v1.6.3) (2024-01-08)
 
 
