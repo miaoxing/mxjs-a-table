@@ -40,7 +40,7 @@
     "@mxjs/a-button": "^3.1.0"
   },
   "devDependencies": {
-    "@testing-library/react": "^11.2.6",
+    "@testing-library/react": "^14",
     "core-js": "^3.6.5",
     "@miaoxing/dev": "^9.1.0",
     "react": ">=16.13.1",
