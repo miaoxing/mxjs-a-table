@@ -1,3 +1,19 @@
+# [1.8.0](https://github.com/miaoxing/mxjs-a-table/compare/v1.7.0...v1.8.0) (2024-02-20)
+
+
+### Features
+
+* 更新 antd, antd icons 版本 ([bee80ea](https://github.com/miaoxing/mxjs-a-table/commit/bee80ea9078ee0a2a91595f0deea982bd3a0e7b6))
+
+
+
+
+
+### Dependencies
+
+* **@mxjs/actions:** upgrade from `0.2.17` to `0.2.18`
+* **@mxjs/a-button:** upgrade from `3.1.0` to `3.2.0`
+
 # [1.7.0](https://github.com/miaoxing/mxjs-a-table/compare/v1.6.3...v1.7.0) (2024-01-31)
 
 
