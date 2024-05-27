@@ -81,7 +81,6 @@ export default withTable(({url, table, tableApi, tableRef, columns = [], ...rest
         querySorter = sorter;
         ref.current.reload();
       }}
-      loading={false}
       {...restProps}
     />
   );
