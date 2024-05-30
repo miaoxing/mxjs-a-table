@@ -1,3 +1,21 @@
+## [1.8.3](https://github.com/miaoxing/mxjs-a-table/compare/v1.8.2...v1.8.3) (2024-05-30)
+
+
+### Bug Fixes
+
+* **a-table:** `loading` 失效 ([2cbc772](https://github.com/miaoxing/mxjs-a-table/commit/2cbc77212213a22a4d98f5482c5998ad549aff42))
+
+
+
+
+
+### Dependencies
+
+* **@mxjs/cur-url:** upgrade from `1.0.12` to `1.0.13`
+* **miaoxing:** upgrade from `0.4.14` to `0.4.15`
+* **@mxjs/a-button:** upgrade from `4.0.0` to `4.0.1`
+* **@mxjs/test:** upgrade from `1.1.0` to `2.0.0`
+
 ## [1.8.2](https://github.com/miaoxing/mxjs-a-table/compare/v1.8.1...v1.8.2) (2024-05-01)
 
 
