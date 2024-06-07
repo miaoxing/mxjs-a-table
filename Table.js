@@ -1,5 +1,5 @@
 import {useContext, useEffect, useRef} from 'react';
-import ProTable from '@ant-design/pro-table';
+import {ProTable} from '@ant-design/pro-components';
 import appendUrl from 'append-url';
 import $ from 'miaoxing';
 import curUrl from '@mxjs/cur-url';
