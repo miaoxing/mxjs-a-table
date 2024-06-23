@@ -1,12 +1,13 @@
-import {useContext, useEffect, useRef} from 'react';
-import {ProTable} from '@ant-design/pro-components';
+import { useEffect, useRef } from 'react';
+import { ProTable } from '@ant-design/pro-components';
 import appendUrl from 'append-url';
 import $ from 'miaoxing';
 import curUrl from '@mxjs/cur-url';
-import {Typography} from 'antd';
-import {withTable, TableContext} from './TableProvider';
+import { Typography } from 'antd';
+import { useTable } from './TableProvider';
+import PropTypes from 'prop-types';
 
-const {Text} = Typography;
+const { Text } = Typography;
 
 const getSortPrams = (querySorter) => {
   // 取消排序后，field 是点击的字段，order 是 undefined
@@ -15,16 +16,18 @@ const getSortPrams = (querySorter) => {
     return {};
   }
 
-  let {field: sort, order} = querySorter;
+  let { field: sort, order } = querySorter;
   order = order === 'ascend' ? 'asc' : 'desc';
 
-  return {sort, order};
+  return { sort, order };
 };
 
 const columnEmptyText = <Text type="secondary">-</Text>;
 
-export default withTable(({url, table, tableApi, tableRef, columns = [], ...restProps}) => {
-  const tableContext = useContext(TableContext);
+const Table = (
+  { url, tableApi, tableRef, columns = [], ...restProps }
+) => {
+  const table = useTable();
 
   let querySorter = {};
 
@@ -51,28 +54,29 @@ export default withTable(({url, table, tableApi, tableRef, columns = [], ...rest
     }
   }, []);
 
+  const handleRequest = async ({ current: page, pageSize: limit, ...params }, sort) => {
+    table.sort = sort;
+
+    const fullUrl = appendUrl(url, { page, limit, ...getSortPrams(querySorter), ...params, ...table.search });
+    const { ret } = await $.get(fullUrl);
+    if (ret.isErr()) {
+      $.ret(ret);
+      return;
+    }
+
+    return {
+      data: ret.data,
+      success: ret.isSuc(),
+      total: ret.total,
+    };
+  };
+
   return (
     <ProTable
       columns={columns}
       columnEmptyText={columnEmptyText}
       actionRef={ref}
-      request={({current: page, pageSize: limit, ...params}, sort) => {
-        tableContext.sort = sort;
-        return new Promise(resolve => {
-          const fullUrl = appendUrl(url, {page, limit, ...getSortPrams(querySorter), ...params, ...table.search});
-          $.get(fullUrl).then(({ret}) => {
-            if (ret.isErr()) {
-              $.ret(ret);
-              return;
-            }
-
-            resolve(ret);
-          });
-        });
-      }}
-      onRequestError={e => {
-        throw e;
-      }}
+      request={handleRequest}
       options={false}
       search={false}
       rowKey="id"
@@ -84,4 +88,13 @@ export default withTable(({url, table, tableApi, tableRef, columns = [], ...rest
       {...restProps}
     />
   );
-});
+};
+
+Table.propTypes = {
+  url: PropTypes.string,
+  tableApi: PropTypes.object,
+  tableRef: PropTypes.object,
+  columns: PropTypes.array,
+};
+
+export default Table;
