@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { ProTable } from '@ant-design/pro-components';
 import appendUrl from 'append-url';
 import $ from 'miaoxing';
@@ -25,7 +25,7 @@ const getSortPrams = (querySorter) => {
 const columnEmptyText = <Text type="secondary">-</Text>;
 
 const Table = (
-  { url, tableApi, tableRef, columns = [], ...restProps }
+  { url, tableApi, tableRef, columns = [], postData, ...restProps }
 ) => {
   const table = useTable();
 
@@ -54,6 +54,7 @@ const Table = (
     }
   }, []);
 
+  const [ready, setReady] = useState(false);
   const handleRequest = async ({ current: page, pageSize: limit, ...params }, sort) => {
     table.sort = sort;
 
@@ -73,6 +74,11 @@ const Table = (
 
   return (
     <ProTable
+      postData={(data) => {
+        setReady(true);
+        return postData ? postData(data) : data;
+      }}
+      style={{display: ready ? '' : 'none'}}
       columns={columns}
       columnEmptyText={columnEmptyText}
       actionRef={ref}
@@ -95,6 +101,7 @@ Table.propTypes = {
   tableApi: PropTypes.object,
   tableRef: PropTypes.object,
   columns: PropTypes.array,
+  postData: PropTypes.func,
 };
 
 export default Table;
