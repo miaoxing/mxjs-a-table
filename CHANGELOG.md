@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/miaoxing/mxjs-a-table/compare/v1.8.3...v1.9.0) (2024-06-30)
+
+
+### Features
+
+* **a-table:** 加载数据后才显示表格 ([84c205f](https://github.com/miaoxing/mxjs-a-table/commit/84c205f447197c316e5e25eb5d8a2ef7dd1fd456))
+
 ## [1.8.3](https://github.com/miaoxing/mxjs-a-table/compare/v1.8.2...v1.8.3) (2024-05-30)
 
 
