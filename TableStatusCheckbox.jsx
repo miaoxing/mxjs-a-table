@@ -9,8 +9,7 @@ import {setValue, getValue} from 'rc-field-form/lib/utils/valueUtil';
 // 记录checkbox状态，以免被外部重置
 const store = {};
 
-export default @withTable
-class TableStatusCheckbox extends React.Component {
+class StatusCheckbox extends React.Component {
   static propTypes = {
     mode: PropTypes.oneOf(['patch', 'toggle']),
     url: PropTypes.string,
@@ -99,3 +98,7 @@ class TableStatusCheckbox extends React.Component {
     return <Checkbox checked={this.state.checked} onChange={this.handleChange}/>;
   }
 }
+
+const TableStatusCheckbox = withTable(StatusCheckbox);
+
+export default TableStatusCheckbox;
