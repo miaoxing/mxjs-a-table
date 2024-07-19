@@ -86,10 +86,18 @@ const Table = (
       options={false}
       search={false}
       rowKey="id"
-      toolBarRender={false}
       onChange={(pagination, filters, sorter) => {
         querySorter = sorter;
         ref.current.reload();
+      }}
+      cardBordered
+      cardProps={{
+        style: {
+          marginBottom: 24,
+        },
+        bodyStyle: {
+          paddingBlock: 24,
+        }
       }}
       {...restProps}
     />
