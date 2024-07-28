@@ -36,8 +36,9 @@
     "miaoxing": "^0.4.15",
     "prop-types": "^15.7.2",
     "set-value": "^4.1.0",
-    "@mxjs/actions": "^0.2.20",
-    "@mxjs/a-button": "^4.0.1"
+    "@mxjs/a-button": "^4.0.1",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {
     "@testing-library/react": "^14",

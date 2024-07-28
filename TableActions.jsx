@@ -1,19 +1,23 @@
-import {LinkActions} from '@mxjs/actions';
-import {Typography} from 'antd';
 import propTypes from 'prop-types';
+import clsx from 'clsx';
+import { twMerge } from 'tailwind-merge';
 
-const {Text} = Typography;
-const empty = <Text type="secondary">-</Text>;
-
-const TableActions = ({children, ...props}) => {
+const TableActions = ({ className, children, ...props }) => {
   return (
-    <LinkActions empty={empty} {...props}>
+    <div
+      className={twMerge(clsx(
+        "divide-x-[1px] space-x-2 divide-[rgba(5,5,5,0.06)] [&>*:not(:first-child)]:pl-2 empty:before:content-['-'] before:text-black/45",
+        className
+      ))}
+      {...props}
+    >
       {children}
-    </LinkActions>
+    </div>
   );
 };
 
 TableActions.propTypes = {
+  className: propTypes.node,
   children: propTypes.node,
 };
 
