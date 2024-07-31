@@ -1,3 +1,35 @@
+# [2.0.0](https://github.com/miaoxing/mxjs-a-table/compare/v1.9.0...v2.0.0) (2024-07-31)
+
+
+### Bug Fixes
+
+* **a-table:** 将 withTable 高阶组件直接应用于 TableStatusCheckbox 类，而不是使用装饰器语法 ([9bedde1](https://github.com/miaoxing/mxjs-a-table/commit/9bedde13962562151fed9964ab1a4c28f724e88e))
+* `export default from` 改为标准语法 ([05c5944](https://github.com/miaoxing/mxjs-a-table/commit/05c5944c6d53a60136a02806bc30755980aa3f0e))
+
+
+### Features
+
+* **a-table:** 表格默认显示为卡片视图 ([11ffceb](https://github.com/miaoxing/mxjs-a-table/commit/11ffceb9788e3bb1a5406194f79b47b24eb0a21e))
+* **table:** `TableActions` 更改为 tailwinds 实现间距，解决动态隐藏的内容会多出分割线的问题 ([26eb742](https://github.com/miaoxing/mxjs-a-table/commit/26eb7426af363c040bb2d99e66bc0c6a6297e1f0))
+
+
+### BREAKING CHANGES
+
+* **table:** `TableActions` 更改为 tailwinds 实现间距，解决动态隐藏的内容会多出分割线的问题
+
+
+
+
+
+### Dependencies
+
+* **@mxjs/cur-url:** upgrade from `1.0.13` to `1.0.14`
+* **append-url:** upgrade from `1.0.27` to `1.0.28`
+* **miaoxing:** upgrade from `0.4.15` to `0.4.16`
+* **@mxjs/a-button:** upgrade from `4.0.1` to `5.0.0`
+* **@miaoxing/dev:** upgrade from `9.1.1` to `9.1.2`
+* **@mxjs/test:** upgrade from `2.0.0` to `2.0.1`
+
 # [1.9.0](https://github.com/miaoxing/mxjs-a-table/compare/v1.8.3...v1.9.0) (2024-06-30)
 
 
