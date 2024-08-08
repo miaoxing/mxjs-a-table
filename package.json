@@ -28,7 +28,7 @@
     "preset": "jest-preset-miaoxing"
   },
   "dependencies": {
-    "antd": "~5.13",
+    "antd": "~5.19",
     "@ant-design/pro-components": "~2.6",
     "@mxjs/cur-url": "^1.0.16",
     "append-url": "^1.0.29",
