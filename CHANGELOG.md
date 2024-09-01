@@ -1,3 +1,23 @@
+# [2.1.0](https://github.com/miaoxing/mxjs-a-table/compare/v2.0.2...v2.1.0) (2024-09-01)
+
+
+### Features
+
+* 更新 `antd` 到 `~5.19` ([cf91e42](https://github.com/miaoxing/mxjs-a-table/commit/cf91e423bb4610a8d4b1cf57df780646f2c6398f))
+
+
+
+
+
+### Dependencies
+
+* **@mxjs/cur-url:** upgrade from `1.0.16` to `1.0.17`
+* **append-url:** upgrade from `1.0.29` to `1.0.30`
+* **miaoxing:** upgrade from `0.4.18` to `0.4.19`
+* **@mxjs/a-button:** upgrade from `5.0.2` to `5.1.0`
+* **@miaoxing/dev:** upgrade from `9.1.3` to `9.2.0`
+* **@mxjs/test:** upgrade from `2.0.3` to `2.0.4`
+
 ## [2.0.2](https://github.com/miaoxing/mxjs-a-table/compare/v2.0.1...v2.0.2) (2024-08-03)
 
 
