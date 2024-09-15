@@ -6,6 +6,8 @@ import CTableDeleteLink from './CTableDeleteLink';
 import TableActions from './TableActions';
 import TableTabs from './TableTabs';
 import { useTable } from './util';
+import TableExpandIcon from './TableExpandIcon';
+import useExpand from './use-expand';
 
 export {
   Table,
@@ -18,4 +20,7 @@ export {
   TableTabs,
   useTable,
   withTable,
+  // @experimental
+  useExpand,
+  TableExpandIcon,
 };
