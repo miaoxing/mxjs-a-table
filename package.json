@@ -1,6 +1,6 @@
 {
   "name": "@mxjs/a-table",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "> TODO: description",
   "author": "twinh <twinhuang@qq.com>",
   "homepage": "https://github.com/miaoxing/miaoxing#readme",
@@ -36,7 +36,7 @@
     "miaoxing": "^0.4.19",
     "prop-types": "^15.7.2",
     "set-value": "^4.1.0",
-    "@mxjs/a-button": "^5.1.0",
+    "@mxjs/a-button": "^5.2.0",
     "clsx": "^2.1.1",
     "tailwind-merge": "^2.3.0"
   },
