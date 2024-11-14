@@ -6,6 +6,7 @@ import curUrl from '@mxjs/cur-url';
 import { Typography } from 'antd';
 import { useTable } from './TableProvider';
 import PropTypes from 'prop-types';
+import { Ret } from '@mxjs/a-ret';
 
 const { Text } = Typography;
 
@@ -25,7 +26,7 @@ const getSortPrams = (querySorter) => {
 const columnEmptyText = <Text type="secondary">-</Text>;
 
 const Table = (
-  { url, tableApi, tableRef, columns = [], postData, ...restProps }
+  { url, tableApi, tableRef, columns = [], postData, result, ...restProps }
 ) => {
   const table = useTable();
 
@@ -72,35 +73,41 @@ const Table = (
     };
   };
 
+  let isPending = !ready ||
+    result && (Array.isArray(result) ? result : [result]).find(request => request.isLoading || request.error);
+
   return (
-    <ProTable
-      postData={(data) => {
-        setReady(true);
-        return postData ? postData(data) : data;
-      }}
-      style={{display: ready ? '' : 'none'}}
-      columns={columns}
-      columnEmptyText={columnEmptyText}
-      actionRef={ref}
-      request={handleRequest}
-      options={false}
-      search={false}
-      rowKey="id"
-      onChange={(pagination, filters, sorter) => {
-        querySorter = sorter;
-        ref.current.reload();
-      }}
-      cardBordered
-      cardProps={{
-        style: {
-          marginBottom: 24,
-        },
-        bodyStyle: {
-          paddingBlock: 24,
-        }
-      }}
-      {...restProps}
-    />
+    <>
+      {result && <Ret result={result}/>}
+      <ProTable
+        postData={(data) => {
+          setReady(true);
+          return postData ? postData(data) : data;
+        }}
+        style={{display: isPending ? 'none' : ''}}
+        columns={columns}
+        columnEmptyText={columnEmptyText}
+        actionRef={ref}
+        request={handleRequest}
+        options={false}
+        search={false}
+        rowKey="id"
+        onChange={(pagination, filters, sorter) => {
+          querySorter = sorter;
+          ref.current.reload();
+        }}
+        cardBordered
+        cardProps={{
+          style: {
+            marginBottom: 24,
+          },
+          bodyStyle: {
+            paddingBlock: 24,
+          },
+        }}
+        {...restProps}
+      />
+    </>
   );
 };
 
@@ -110,6 +117,10 @@ Table.propTypes = {
   tableRef: PropTypes.object,
   columns: PropTypes.array,
   postData: PropTypes.func,
+  /**
+   * @experimental
+   */
+  result: PropTypes.oneOfType([PropTypes.object,  PropTypes.array]),
 };
 
 export default Table;
