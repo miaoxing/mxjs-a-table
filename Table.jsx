@@ -35,7 +35,14 @@ const Table = (
   const ref = useRef();
   url || (url = curUrl.apiData());
 
+  // 默认不显示搜索，列设置了搜索才开启搜索
+  let search = false;
   columns.map((column) => {
+    column.search = column.search || false;
+    if (column.search) {
+      search = true;
+    }
+
     if (typeof column.dataIndex === 'undefined') {
       column.dataIndex = column.title;
     }
@@ -90,7 +97,7 @@ const Table = (
         actionRef={ref}
         request={handleRequest}
         options={false}
-        search={false}
+        search={search}
         rowKey="id"
         onChange={(pagination, filters, sorter) => {
           querySorter = sorter;
