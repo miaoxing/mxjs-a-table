@@ -8,6 +8,8 @@ import { useTable } from './TableProvider';
 import PropTypes from 'prop-types';
 import { Ret } from '@mxjs/a-ret';
 
+const LOADING_DELAY = 300;
+
 const { Text } = Typography;
 
 const getSortPrams = (querySorter) => {
@@ -91,7 +93,7 @@ const Table = (
           setReady(true);
           return postData ? postData(data) : data;
         }}
-        style={{display: isPending ? 'none' : ''}}
+        style={{ display: isPending ? 'none' : '' }}
         columns={columns}
         columnEmptyText={columnEmptyText}
         actionRef={ref}
@@ -99,6 +101,9 @@ const Table = (
         options={false}
         search={search}
         rowKey="id"
+        loading={{
+          delay: LOADING_DELAY,
+        }}
         onChange={(pagination, filters, sorter) => {
           querySorter = sorter;
           ref.current.reload();
@@ -127,7 +132,7 @@ Table.propTypes = {
   /**
    * @experimental
    */
-  result: PropTypes.oneOfType([PropTypes.object,  PropTypes.array]),
+  result: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
 };
 
 export default Table;
