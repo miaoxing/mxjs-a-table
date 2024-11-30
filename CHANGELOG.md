@@ -1,3 +1,20 @@
+# [2.3.0](https://github.com/miaoxing/mxjs-a-table/compare/v2.2.1...v2.3.0) (2024-11-30)
+
+
+### Features
+
+* **a-table:** `Table` 增加 loading 延迟显示 ([2aa1cb4](https://github.com/miaoxing/mxjs-a-table/commit/2aa1cb409bb36cccee112d583084263c20ab0118))
+* **a-table:** 默认不显示搜索，列设置了搜索才开启搜索 ([b5cf914](https://github.com/miaoxing/mxjs-a-table/commit/b5cf9143846e2ad0fcefa938a2a9241fe8572d2f))
+* **a-table, experimental:** `Table` 支持加载外部数据后再显示 ([abd5a2f](https://github.com/miaoxing/mxjs-a-table/commit/abd5a2f4a4f732e2a73ad67691e43ef99a3a2159))
+
+
+
+
+
+### Dependencies
+
+* **@mxjs/a-ret:** upgrade from `2.1.1` to `2.2.0`
+
 ## [2.2.1](https://github.com/miaoxing/mxjs-a-table/compare/v2.2.0...v2.2.1) (2024-11-01)
 
 
