@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "antd": "~5.19",
-    "@ant-design/pro-components": "~2.6",
+    "@ant-design/pro-components": "~2.8",
     "@mxjs/cur-url": "^1.0.18",
     "append-url": "^1.1.0",
     "deepmerge": "^4.2.2",
