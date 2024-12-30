@@ -1,3 +1,34 @@
+# [2.4.0](https://github.com/miaoxing/mxjs-a-table/compare/v2.3.0...v2.4.0) (2024-12-30)
+
+
+### Bug Fixes
+
+* 链接按钮移除不再使用的 `getPermissions` 方法 ([5d02ac2](https://github.com/miaoxing/mxjs-a-table/commit/5d02ac21281edffe9ce03f11b9433e177a620343))
+
+
+### Features
+
+* 更新 @ant-design/pro-components 到 ~2.8 ([d45e4c0](https://github.com/miaoxing/mxjs-a-table/commit/d45e4c07336c2d618333f021032ea94e18fb7a46))
+
+
+### Reverts
+
+* "feat(a-table, experimental): `Table` 支持加载外部数据后再显示" ([01bd7f2](https://github.com/miaoxing/mxjs-a-table/commit/01bd7f2c51fdef2b76a437477957746f07e797d3))
+
+
+
+
+
+### Dependencies
+
+* **@mxjs/cur-url:** upgrade from `1.0.18` to `2.0.0`
+* **append-url:** upgrade from `1.1.0` to `1.1.1`
+* **miaoxing:** upgrade from `0.4.19` to `0.4.20`
+* **@mxjs/a-button:** upgrade from `5.2.0` to `5.2.1`
+* **@mxjs/a-ret:** upgrade from `2.2.0` to `2.2.1`
+* **@miaoxing/dev:** upgrade from `9.2.0` to `9.3.0`
+* **@mxjs/test:** upgrade from `2.0.5` to `2.0.6`
+
 # [2.3.0](https://github.com/miaoxing/mxjs-a-table/compare/v2.2.1...v2.3.0) (2024-11-30)
 
 
@@ -182,7 +213,7 @@
 
 ### Features
 
-* 更新 antd, antd icons 版本 ([bee80ea](https://github.com/miaoxing/mxjs-a-table/commit/bee80ea9078ee0a2a91595f0deea982bd3a0e7b6))
+* 更新 antd, antd icons 版本 ([da13825](https://github.com/miaoxing/mxjs-a-table/commit/da138254cb9fbc76fec5c14321ee81d73986f42a))
 
 
 
