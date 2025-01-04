@@ -42,12 +42,12 @@ const getData = (mode, rowId, name, checked) => {
   return {};
 };
 
-const StatusCheckbox = ({ mode = 'patch', url, name, row, table }) => {
+const StatusCheckbox = ({ mode = 'patch', url, name, row, table, component: Component = Checkbox, ...rest }) => {
   const [checked, setChecked] = useState(getInitialValue(row, name));
 
   const handleChange = (e) => {
-
-    const newChecked = e.target.checked;
+    // 兼容 Switch 和 Checkbox 两种组件
+    const newChecked = typeof e === 'boolean' ? e : e.target.checked;
 
     // 更改时，将状态记录起来
     store[row.id] = newChecked;
@@ -68,7 +68,7 @@ const StatusCheckbox = ({ mode = 'patch', url, name, row, table }) => {
     });
   };
 
-  return <Checkbox checked={checked} onChange={handleChange} />;
+  return <Component checked={checked} onChange={handleChange} {...rest} />;
 };
 
 StatusCheckbox.propTypes = {
@@ -84,6 +84,8 @@ StatusCheckbox.propTypes = {
   table: PropTypes.shape({
     reload: PropTypes.func.isRequired,
   }).isRequired,
+  // @internal
+  component: PropTypes.elementType,
 };
 
 const TableStatusCheckbox = withTable(StatusCheckbox);
