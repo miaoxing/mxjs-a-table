@@ -102,13 +102,13 @@ const Table = (
         querySorter = sorter;
         ref.current.reload();
       }}
+      toolBarRender={() => {
+        return ' ';
+      }}
       cardBordered
       cardProps={{
         style: {
           marginBottom: 24,
-        },
-        bodyStyle: {
-          paddingBlock: 24,
         },
       }}
       {...restProps}
