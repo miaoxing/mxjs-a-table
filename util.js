@@ -13,6 +13,7 @@ class TableStore {
 
     this.hooked = true;
     this.reload = table.reload;
+    this.addSearch = table.addSearch;
   }
 }
 
