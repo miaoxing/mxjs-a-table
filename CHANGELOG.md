@@ -1,3 +1,17 @@
+# [2.5.0](https://github.com/miaoxing/mxjs-a-table/compare/v2.4.1...v2.5.0) (2025-02-02)
+
+
+### Bug Fixes
+
+* **a-table:** `toolBarRender` 需返回元素 ([37a28e8](https://github.com/miaoxing/mxjs-a-table/commit/37a28e88d676e767fb642d2d1147d1d7a252935a))
+* **a-table:** 使用 `toolBarRender` 渲染空白替代 bodyStyle padding ([6ceb1d0](https://github.com/miaoxing/mxjs-a-table/commit/6ceb1d0bf8792c65b0d432e561b2a09f0f7aa210))
+
+
+### Features
+
+* **a-table:** `Table` 增加 `addSearch` 方法 ([304297e](https://github.com/miaoxing/mxjs-a-table/commit/304297e44c2192f91feed589de8d90afe4e267c6))
+* **table:** 增加 `TableSwitch` 组件 ([f730c97](https://github.com/miaoxing/mxjs-a-table/commit/f730c97a56942318393338f2fb508f406b42c647))
+
 ## [2.4.1](https://github.com/miaoxing/mxjs-a-table/compare/v2.4.0...v2.4.1) (2024-12-31)
 
 
