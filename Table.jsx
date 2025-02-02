@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, Fragment } from 'react';
 import { ProTable } from '@ant-design/pro-components';
 import appendUrl from 'append-url';
 import $ from 'miaoxing';
@@ -103,7 +103,7 @@ const Table = (
         ref.current.reload();
       }}
       toolBarRender={() => {
-        return ' ';
+        return <Fragment/>;
       }}
       cardBordered
       cardProps={{
